@@ -1,0 +1,96 @@
+/**
+  |============================
+  | include css partials with
+  | default @import url()
+  |============================
+*/
+/* Common styles */
+@import url('./reset.css');
+@import url('./base.css');
+
+body {
+}
+main {
+  font-family: 'Montserrat', sans-serif;
+  justify-content: center;
+  padding: 32px;
+}
+.form {
+  gap: 8px;
+  justify-self: center;
+}
+.input {
+  border-radius: 4px;
+  width: 272px;
+  height: 40px;
+  border: 1px solid #808080;
+  font-weight: 400;
+  font-size: 16px;
+
+  /* line-height: 24px; */
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #808080;
+  margin-top: 36px;
+  margin-bottom: 32px;
+}
+.input:hover {
+  border: 1px solid #000;
+}
+.button {
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 91px;
+  height: 40px;
+  background: #4e75ff;
+  border: none;
+  color: #fff;
+}
+.button:hover {
+  background: #6c8cff;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.gallery-item {
+  flex-basis: calc((100% - 48px) / 3);
+  border: 1px solid #808080;
+  overflow: hidden;
+}
+.gallery-image {
+  width: 100%;
+  display: block;
+  height: 200px;
+  object-fit: cover;
+}
+.info {
+  display: flex;
+  gap: 28px;
+  justify-content: center;
+}
+.info-item {
+  flex-direction: column;
+  max-height: 48px;
+  height: 100%;
+}
+.info-item-text {
+  font-weight: 600;
+  font-size: 12px;
+
+  /* line-height: 16px; */
+  line-height: 1.33333;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+.info-item-value {
+  font-weight: 400;
+  font-size: 12px;
+
+  /* line-height: 24px; */
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
