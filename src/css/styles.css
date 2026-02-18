@@ -12,7 +12,6 @@ body {
 }
 main {
   font-family: 'Montserrat', sans-serif;
-  justify-content: center;
   padding: 32px;
 }
 .form {
@@ -93,4 +92,11 @@ main {
   line-height: 2;
   letter-spacing: 0.04em;
   color: #2e2f42;
+}
+.load-button {
+  width: 125px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 32px auto;
 }

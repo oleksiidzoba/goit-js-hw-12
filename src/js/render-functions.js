@@ -52,9 +52,9 @@ export function clearGallery() {
 }
 
 export function showLoader() {
-  loaderEl.classList.add('is-visible');
+  document.querySelector('.loader').hidden = false;
 }
 
 export function hideLoader() {
-  loaderEl.classList.remove('is-visible');
+  document.querySelector('.loader').hidden = true;
 }
