@@ -20,10 +20,10 @@ let page = 1;
 let totalPages = 0;
 const PER_PAGE = 15;
 
+loadMoreBtn.hidden = true;
 
 form.addEventListener('submit', handleSearch);
 loadMoreBtn.addEventListener('click', handleLoadMore);
-
 
 async function handleSearch(event) {
   event.preventDefault();
@@ -64,9 +64,7 @@ currentQuery = query;
 
   
     
-    if (page < totalPages) {
-      loadMoreBtn.hidden = false;
-    }
+  loadMoreBtn.hidden = page >= totalPages;
 
   } catch (error) {
     iziToast.error({
